@@ -2,79 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ScratchOne Everywhere - Download</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: black;
-      background-size: cover;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      backdrop-filter: blur(6px);
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      text-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
-    .button {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      padding: 14px 28px;
-      margin: 10px;
-      border-radius: 12px;
-      color: white;
-      text-decoration: none;
-      transition: 0.3s ease;
-      backdrop-filter: blur(4px);
-    }
-
-    .button:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: scale(1.05);
-    }
-
-    .platforms {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 12px;
-      opacity: 0.6;
     }
   </style>
 </head>
-<body>
-  <h1>Download ScratchOne Everywhere</h1>
+<body class="bg-black bg-opacity-100 min-h-screen text-white flex flex-col items-center pt-24 relative">
 
-  <div class="platforms">
-    <a href="https://example.com/download/windows" class="button">Windows</a>
-    <a href="https://example.com/download/mac" class="button">Mac</a>
-    <a href="https://example.com/download/linux" class="button">Linux</a>
-    <a href="https://example.com/download/android" class="button">Android</a>
-    <a href="https://example.com/download/ios" class="button">iOS</a>
-    <a href="https://example.com/download/xbox" class="button">Xbox</a>
-    <a href="https://example.com/download/switch" class="button">Nintendo Switch</a>
-    <a href="https://example.com/download/vr" class="button">VR / Vision Pro</a>
-    <a href="https://example.com/download/playstation" class="button">PlayStation</a>
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-black bg-opacity-50 backdrop-blur-sm border-b border-white/20 text-white py-4 px-8 flex justify-between items-center z-50">
+    <h1 class="text-2xl font-bold">ScratchOne Everywhere</h1>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="marketplace.html" class="hover:underline">Marketplace</a>
+      <a href="downloadclient.html" class="hover:underline">Client</a>
+    </div>
+  </nav>
+
+  <!-- Title -->
+  <h1 class="text-4xl font-bold mb-10 text-center drop-shadow-lg">Download ScratchOne Everywhere | ScratchOne Everywhere SDK</h1>
+
+  <!-- Platform Buttons -->
+  <div class="flex flex-wrap justify-center gap-6 px-4 max-w-5xl">
+    <a href="https://soeverywhere.lukintosh.com/windows" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[140px]">Windows</a>
+    <a href="https://soeverywhere.lukintosh.com/mac" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[140px]">Mac</a>
+    <a href="https://soeverywhere.lukintosh.com/linux" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[140px]">Linux</a>
+    <a href="https://soeverywhere.lukintosh.com/android" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[140px]">Android</a>
+    <a href="https://soeverywhere.lukintosh.com/ios" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[140px]">iOS</a>
+    <a href="https://soeverywhere.lukintosh.com/xbox" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[140px]">Xbox</a>
+    <a href="https://soeverywhere.lukintosh.com/switch" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[140px]">Nintendo Switch</a>
+        <a href="https://soeverywhere.lukintosh.com/playstation" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[140px]">PlayStation</a>
+    <a href="https://soeverywhere.lukintosh.com/vr" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[140px]">VR / Vision Pro</a>
   </div>
-<footer>© 2025 Lukintosh Corporation. Todos os direitos reservados.</footer>
-   <footer>This product is not affiliated with, endorsed by, or in any way officialy connected with Scratch, the MIT Media Lab, or The Scratch Foundation, Nintendo Co., Ltd., Microsoft Corporation, Apple Inc., Sony Interactive Entertainment, or the Linux Foundation. All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation or endorsement.</footer>
+
+  <!-- Footer -->
+  <footer class="mt-20 mb-8 text-xs opacity-60 text-center px-4 max-w-3xl">
+    © 2025 Lukintosh Corporation. Todos os direitos reservados.<br/><br/>
+    This product is not affiliated with, endorsed by, or in any way officially connected with Scratch, the MIT Media Lab, or The Scratch Foundation, Nintendo Co., Ltd., Microsoft Corporation, Apple Inc., Sony Interactive Entertainment, or the Linux Foundation. All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation or endorsement.
+  </footer>
 </body>
 </html>
-
-</body>

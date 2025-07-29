@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScratchOne Everywhere Client</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black bg-opacity-100 text-white min-h-screen flex flex-col items-center justify-start pt-24 relative">
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm border-b border-white/20 text-white py-4 px-8 flex justify-between items-center z-50">
+    <h1 class="text-2xl font-bold">ScratchOne Everywhere</h1>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="marketplace.html" class="hover:underline">Marketplace</a>
+            <a href="downloadclient.html" class="hover:underline">Client</a>
+
+    </div>
+  </nav>
+
+  <!-- Title -->
+  <h1 class="text-4xl font-bold mb-10 text-center drop-shadow">Download the ScratchOne Everywhere Client</h1>
+
+  <!-- Client Buttons -->
+  <div class="flex flex-wrap justify-center gap-6 px-4">
+    <a href="https://soeverywhere.lukintosh.com/downloadclient/ScratchOneEverywhereClientInstaller.exe" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[200px]">Download for Windows</a>
+    <a href="https://soeverywhere.lukintosh.com/downloadclient/ScratchOneEverywhereClientInstaller.dmg" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[200px]">Download for macOS</a>
+    <a href="https://soeverywhere.lukintosh.com/downloadclient/ScratchOneEverywhereClientInstaller.AppImage" class="px-6 py-3 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 transition text-center min-w-[200px]">Download for Linux</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-20 text-xs opacity-60 text-center px-4">
+    © 2025 Lukintosh Corporation. Todos os direitos reservados.<br><br>
+    This product is not affiliated with, endorsed by, or in any way officially connected with Scratch, the MIT Media Lab, or The Scratch Foundation, Microsoft Corporation, Apple Inc., or the Linux Foundation. All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation or endorsement.
+  </footer>
+</body>
+</html>
